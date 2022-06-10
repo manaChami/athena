@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+body {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0 56px 0;
+  }
+
+#mainVisual {
+  display: block;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background-image: url("../images/mainVis-pc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no repeat;
+}
+
+.button-large{
+  display: block;
+  width: 240px;
+  height: 67px;
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
+  letter-spacing: 0.12em;
+  font-weight: bold;
+  line-height: 70px;
+  text-align: center;
+  margin: 556px 0 0 118px;
+  font-family: 'Josefin Sans', sans-serif;}
+}
+
+.section-inner {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#whatIsAthena {
+  display: block;
+  width: 100vw;
+}
+
+.col-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-3 .item {
+  max-width: 960px;
+  width: calc((100% - 64px)3/);
+}
+
+.col-2 {
+  display: flex;
+}
+
+.col-2 .item {
+  width: calc((100% - 24px)/2);
+}
+
+h2.large {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+}
+
+#whatIsAthena h3.small {
+  letter-spacing: 3px;
+  font-family: 'Shippori Mincho B1', serif;s
+}
+
+h3.small {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+}
+
+p.large {
+  letter-spacing: 1.1px;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 28px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+}
+
+p.medium {
+  text-align: center;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 18px;
+  line-height: 2.75rem;
+  letter-spacing: 1px;
+}
+
+p.small {
+  font-size: 13px;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+}
+
+#whatIsAthena h3.small {
+  text-align: center;
+}
+
+#whatIsAthena p.large {
+  text-align: center;
+  line-height: 55px
+}
+
+#whatIsAthena p.medium {
+  text-align: center;
+}
+
+#brandStory h3.small {
+  text-align: center;
+}
+
+#brandStory p.medium {
+  text-align: left;
+}
