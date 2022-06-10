@@ -44,7 +44,7 @@ body {
 
 .col-3 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .col-3 .item {
@@ -54,6 +54,7 @@ body {
 
 .col-2 {
   display: flex;
+  align-items: center;
 }
 
 .col-2 .item {
@@ -125,4 +126,20 @@ p.small {
 
 #brandStory p.medium {
   text-align: left;
+}
+
+#header {
+  height: 70px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gnav-pc-wrap {
+  display: flex;
+  align-items: center;
+}
+
+ul.gnav-pc li {
+  margin-right: 40px;
+  display: inline;
 }
