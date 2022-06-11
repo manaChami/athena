@@ -6,6 +6,10 @@ body {
   padding: 40px 0 56px 0;
   }
 
+img {
+  max-width: 100%;
+}
+
 #mainVisual {
   display: block;
   width: 100vw;
@@ -13,7 +17,8 @@ body {
   background-image: url("./images/mainVis-pc.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .button-large{
@@ -27,8 +32,10 @@ body {
   font-weight: bold;
   line-height: 70px;
   text-align: center;
-  margin: 556px 0 0 118px;
-  font-family: 'Josefin Sans', sans-serif;}
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  bottom: 160px;
+  left: 115px;
 }
 
 .section-inner {
@@ -42,14 +49,14 @@ body {
   width: 100vw;
 }
 
+
 .col-3 {
   display: flex;
   justify-content: space-around;
 }
 
 .col-3 .item {
-  max-width: 960px;
-  width: calc((100% - 64px)3/);
+  width: calc((100% - 64px)/3);
 }
 
 .col-2 {
@@ -72,7 +79,7 @@ h2.large {
 
 #whatIsAthena h3.small {
   letter-spacing: 3px;
-  font-family: 'Shippori Mincho B1', serif;s
+  font-family: 'Shippori Mincho B1', serif;
 }
 
 h3.small {
@@ -84,11 +91,15 @@ h3.small {
   font-weight: bold;
 }
 
+#productConcept h3.small {
+  font-size: 24px;
+}
+
 p.large {
   letter-spacing: 1.1px;
   font-family: 'Shippori Mincho B1', serif;
   font-size: 28px;
-  line-height: 2;
+  line-height: 78px;
   letter-spacing: 0.06em;
   font-weight: bold;
 }
@@ -96,15 +107,17 @@ p.large {
 p.medium {
   text-align: center;
   font-family: 'Shippori Mincho B1', serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2.75rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.02em;
 }
 
 p.small {
-  font-size: 13px;
-  line-height: 1.75;
-  letter-spacing: 0.03em;
+  text-align: center;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 15px;
+  line-height: 1.75rem;
+  letter-spacing: 0.02em;
 }
 
 #whatIsAthena h3.small {
@@ -137,9 +150,30 @@ p.small {
 .gnav-pc-wrap {
   display: flex;
   align-items: center;
+  margin-right: 65px;
 }
 
 ul.gnav-pc li {
-  margin-right: 40px;
+  margin-right: 150px;
   display: inline;
+}
+
+.header-logo {
+  width: 65px;
+  margin:14px 0 0 65px;
+  display: flex;
+  align-items: center;
+}
+
+#productConcept {
+  align-items: center;
+}
+
+.item-img {
+  width: 573px;
+  height: 280px;
+}
+
+.item {
+  width: 390px
 }
