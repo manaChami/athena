@@ -41,7 +41,17 @@ img {
 .section-inner {
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 #whatIsAthena {
@@ -49,6 +59,9 @@ img {
   width: 100vw;
 }
 
+#whatisathenaimg{
+  margin: 30px 0;
+}
 
 .col-3 {
   display: flex;
@@ -120,6 +133,31 @@ p.small {
   letter-spacing: 0.02em;
 }
 
+#header {
+  height: 70px ;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+.gnav-pc-wrap {
+  display: flex;
+  align-items: center;
+  margin-right: 65px;
+}
+
+ul.gnav-pc li {
+  margin-right: 150px;
+  display: inline;
+}
+
+.header-logo {
+  width: 65px;
+  margin:14px 0 0 65px;
+  display: flex;
+  align-items: center;
+}
+
 #whatIsAthena h3.small {
   text-align: center;
 }
@@ -141,30 +179,6 @@ p.small {
   text-align: left;
 }
 
-#header {
-  height: 70px ;
-  display: flex;
-  justify-content: space-between;
-}
-
-.gnav-pc-wrap {
-  display: flex;
-  align-items: center;
-  margin-right: 65px;
-}
-
-ul.gnav-pc li {
-  margin-right: 150px;
-  display: inline;
-}
-
-.header-logo {
-  width: 65px;
-  margin:14px 0 0 65px;
-  display: flex;
-  align-items: center;
-}
-
 #productConcept {
   align-items: center;
 }
@@ -176,4 +190,40 @@ ul.gnav-pc li {
 
 .item {
   width: 390px
+}
+
+#footer {
+  display: table;
+  max-width: 960px;
+  padding: 1.25em;
+  margin: 0 auto;
+  border: 0.062em solid #fff;
+  color: #fff;
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+.footer-logo {
+  width: 30px;
+  margin: 10px 0 0 60px;
+}
+
+.left {
+  display: table-cell;
+  width: 33.3%;
+  padding: 1em;
+  text-align: left;
+}
+
+.mid {
+  display: table-cell;
+  width: 33.3%;
+  padding: 1em;
+  text-align: left;
+}
+
+.right {
+  display: table-cell;
+  width: 33.3%;
+  padding: 1em;
+  text-align: left;
 }
