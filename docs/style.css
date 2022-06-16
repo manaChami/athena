@@ -10,16 +10,36 @@ img {
   max-width: 100%;
 }
 
-#mainVisual {
+.full div {
   display: block;
   width: 100vw;
   height: calc(100vh - 70px);
-  background-image: url("./images/mainVis-pc.jpg");
+  /* height: 100vh; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  margin-top: 70px;
+}
+
+.full div.mainVis1 {
+  background-image: url("./images/mainVis-pc.jpg");
+}
+
+.full div.mainVis2 {
+  background-image: url("./images/mainVis2.jpg");
+}
+
+.full div.mainVis3 {
+  background-image: url("./images/mainVis3.jpg");
+}
+
+.full div.mainVis4 {
+  background-image: url("./images/mainVis4.jpg");
+}
+
+.full .slick-dots {
+  bottom: 4%;
+  z-index: +1;
 }
 
 .button-large{
@@ -62,55 +82,6 @@ li {
   display: none;
 }
 
-@media screen and (max-width: 768px;) {
-  .section-inner {
-    padding: 0 24px;
-    max-width: 550px;
-    margin: 40px auto 10px;
-    }
-
-  .pc-only {
-    display: none;
-  }
-
-  .sp-only {
-    display: block;
-  }
-}
-
-#whatIsAthena {
-  display: block;
-  width: 100vw;
-}
-
-#whatisathenaimg{
-  margin: 30px 0;
-}
-
-.col-3 {
-  display: flex;
-  justify-content: space-around;
-}
-
-.col-3 .item {
-  width: calc((100% - 64px)/3);
-}
-
-.col-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.col-2 .item {
-  width: calc((100% - 24px)/2);
-  /* margin: 40px auto; */
-}
-
-.col-2:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
 h2.large {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
@@ -118,17 +89,7 @@ h2.large {
   line-height: 1.6;
   letter-spacing: 0.03em;
   font-weight: bold;
-  margin-top: 200px;
-}
-
-#whatIsAthena h2.large {
-  margin-top: 80px;
-} 
-
-#whatIsAthena h3.small {
-  letter-spacing: 3px;
-  font-family: 'Shippori Mincho B1', serif;
-  margin: 50px auto;
+  margin: 200px auto 50px auto;
 }
 
 h3.small {
@@ -140,17 +101,14 @@ h3.small {
   font-weight: bold;
 }
 
-#productConcept h3.small {
-  font-size: 24px;
-}
-
 p.large {
   letter-spacing: 1.1px;
   font-family: 'Shippori Mincho B1', serif;
   font-size: 28px;
-  line-height: 78px;
+  line-height: 2.5em;
   letter-spacing: 0.06em;
   font-weight: bold;
+  margin: 80px auto;
 }
 
 p.medium {
@@ -165,20 +123,61 @@ p.small {
   text-align: center;
   font-family: 'Shippori Mincho B1', serif;
   font-size: 16.5px;
-  line-height: 1.75rem;
+  line-height: 2.00rem;
   letter-spacing: 0.02em;
+}
+
+#whatIsAthena h2.large {
+  margin-top: 80px;
+} 
+
+#whatIsAthena h3.small {
+  letter-spacing: 3px;
+  font-family: 'Shippori Mincho B1', serif;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#whatIsAthena p.large {
+  text-align: center;
+  line-height: 2.85em;
+}
+
+#whatIsAthena p.medium {
+  text-align: center;
+}
+
+#brandStory h3.small {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#brandStory p.medium {
+  text-align: left;
+  margin-top: 20px;
+}
+
+#productConcept h3.small {
+  font-size: 24px;
 }
 
 #header {
   background-color: #000;
   width: 100%;
-  height: 70px ;
+  height: 90px ;
   display: flex;
   justify-content: space-between;
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: 'Josefin Sans', serif;
   position: fixed;
   top: 0;
   z-index: 1;
+}
+
+.header-logo {
+  width: 65px;
+  margin: 8px 0 0 30px;
+  display: flex;
+  align-items: center;
 }
 
 .gnav-pc-wrap {
@@ -200,45 +199,71 @@ ul.gnav-pc li a:hover {
   color: #c1aa80;
 }
 
+.gnav-sp-wrap {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+}
+
+ul.gnav-sp {
+  text-align: center;
+  margin: 80x auto;
+  font-family: "Josefin Sans", serif;
+  font-size: 20px;
+  letter-spacing: 0.1em; 
+  line-height: 100px;
+}
+
+ul.gnav-sp li a {
+  color: #fff;
+}
+
+ul.gnav-sp li a:hover {
+  color: #c1aa80;
+}
+
 #menu-button {
   display: none;
 }
 
-.header-logo {
-  width: 65px;
-  margin:14px 0 0 65px;
+#whatisathenaimg{
+  margin: 30px 0;
+}
+
+.col-3 {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
 }
 
-#whatIsAthena h3.small {
-  text-align: center;
-}
-
-#whatIsAthena p.large {
-  text-align: center;
-  line-height: 55px
-}
-
-#whatIsAthena p.medium {
-  text-align: center;
-}
-
-#brandStory h3.small {
-  text-align: center;
-}
-
-#brandStory p.medium {
-  text-align: left;
+.col-3 .item {
+  width: calc((100% - 64px)/3);
 }
 
 #productConcept {
   align-items: center;
 }
 
+.col-2 {
+  display: flex;
+  align-items: center;
+}
+
+.col-2 .item {
+  width: calc((100% - 24px)/2);
+}
+
+.col-2:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
 .item-img {
   width: 573px;
   height: 280px;
+  margin: 15px auto;
 }
 
 .item {
@@ -252,13 +277,26 @@ ul.gnav-pc li a:hover {
   margin: 80px auto 100px;
   color: #fff;
   font-family: 'Shippori Mincho B1', serif;
-  line-height: 50px;
+  font-size: 22px;
+  line-height: 80px;
   align-items: center;
 }
 
 #footer-logo  {
-  width: 30px;
-  margin: 0 38px;
+  width: 60px;
+  margin: 0 36px;
+}
+
+ul.footer-cts li a {
+  color: #fff;
+}
+
+ul.footer-cts li a:hover {
+  color: #c1aa80;
+}
+
+ul.footer-cts {
+  margin: 0 auto;
 }
 
 .copyright {  
@@ -266,9 +304,25 @@ ul.gnav-pc li a:hover {
   text-align: center;
 }
 
+/* SP */
+
 @media screen and (max-width: 768px) {
+  .section-inner {
+    padding: 0 24px;
+    max-width: 550px;
+    margin: 40px auto 10px;
+  }
+  
+  .pc-only {
+    display: none;
+  }
+  
+  .sp-only {
+    display: block;
+  }
+  
   #header {
-    height: 80px;
+    height: 60px;
     padding: 0;
   }
 
@@ -281,14 +335,18 @@ ul.gnav-pc li a:hover {
   }
 
   .header-logo {
-    margin: 10px auto auto 15px;
+    display: block;
+    margin: 10px auto auto 0px;
+    width: 58px;
+    align-items: center;
   }
 
   #menu-button {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     padding: 22px 12px;
+    position: relative;
   }
 
   .menu-button-inner {
@@ -304,10 +362,11 @@ ul.gnav-pc li a:hover {
     width: 100%;
     background-color: #fff;
     position: absolute;
+    transition: all .4s;;
   }
 
   .menu-button-inner span:nth-child(1) {
-    top: 20px;
+    top: 15px;
   }
 
   .menu-button-inner span:nth-child(2) {
@@ -317,8 +376,13 @@ ul.gnav-pc li a:hover {
   } 
 
   .menu-button-inner span:nth-child(3) {
-    bottom: 20px;
+    bottom: 15px;
   }
+
+  .menu-button-inner.active span:nth-child(1),
+  .menu-button-inner.active span:nth-child(3){
+  top: 0px;
+}
 
   h2.large {
     font-size: 28px;
@@ -328,14 +392,22 @@ ul.gnav-pc li a:hover {
   h3.small {
     font-size: 18px;
     letter-spacing: 0.01em;
-    margin: 35px auto 20px;
+    margin: 50px auto 20px;
   }
+
   #whatIsAthena h3.small {
-    margin: 20px auto 30px;
+    margin: 20px auto;
+  }
+
+  #whatIsAthena h3.small span {
+    display: block;
+    line-height: 2.5em;
   }
 
   p.large {
-    font-size: 16px;
+    font-size: 15.5px;
+    letter-spacing: 0.02em;
+    margin: 30px 0;
   }
 
   #whatIsAthena p.large {
@@ -344,13 +416,21 @@ ul.gnav-pc li a:hover {
   }
 
   p.medium {
-    font-size: 15px;
-    margin-top: 15px;
+    font-size: 14px;
+    line-height: 2.5em;
+    margin-top: 20px;
   }
 
-  #mainVisual {
+  p.small {
+    font-size: 14px;
+    line-height: 2.5em;
+  }  
+
+  .full div {
+    display: block;
     width: 100%;
-    height: 300px;
+    height: 400px;
+    position: relative;
   }
 
   .button-large {
@@ -359,8 +439,8 @@ ul.gnav-pc li a:hover {
     height: 42px;
     font-size: 14px;
     line-height: 48px;
-    position: absolute;
-    bottom: 80px;
+    position: relative;
+    /* bottom: 20px; */
     left: 20px;
   }
 
@@ -376,6 +456,10 @@ ul.gnav-pc li a:hover {
     text-align: center;
   }
 
+  #brandStory .card-img {
+    margin: 0 auto; 
+  }
+
   .col-2 {
     display: block;
   }
@@ -388,7 +472,15 @@ ul.gnav-pc li a:hover {
     width: 100%;
     align-items: center;
   }
-  
+
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
   #productConcept h3.small {
     font-size: 18px;
   }
@@ -397,10 +489,17 @@ ul.gnav-pc li a:hover {
     display: block;
     width: 100%;
     text-align: center;
+    font-size: 11px;
+    line-height: 40px;
+  }
+
+  #footer-logo {
+    width: 40px;
+    margin-bottom: 15px;
   }
 
   .copyright {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
