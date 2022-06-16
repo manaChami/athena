@@ -127,7 +127,7 @@ p.small {
 }
 
 #whatIsAthena h2.large {
-  margin-top: 80px;
+  padding-top: 80px;
 } 
 
 #whatIsAthena h3.small {
@@ -146,6 +146,10 @@ p.small {
   text-align: center;
 }
 
+#brandStory h2.large {
+  padding-top: 80px;
+}
+
 #brandStory h3.small {
   text-align: center;
   margin-bottom: 20px;
@@ -156,6 +160,9 @@ p.small {
   margin-top: 20px;
 }
 
+#productConcept h2.large {
+  padding-top: 80px;
+}
 #productConcept h3.small {
   font-size: 24px;
 }
@@ -394,7 +401,8 @@ ul.gnav-sp li a:hover {
   }
 
   #whatIsAthena h2.large {
-    padding-top: 0px;
+    margin-top: 9;
+    padding-top: 80px;
   }
   
   #whatIsAthena h3.small {
