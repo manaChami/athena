@@ -396,14 +396,14 @@ ul.gnav-sp li a:hover {
   }
 
   p.large {
-    font-size: 15.5px;
-    letter-spacing: 0.02em;
+    font-size: 15px;
+    letter-spacing: 0.01em;
     margin: 30px 0;
   }
 
   #whatIsAthena p.large {
+    /* font-size: 13px; */
     line-height: 2.75em;
-    letter-spacing: 0.02em;
   }
 
   p.medium {
